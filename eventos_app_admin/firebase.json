@@ -1,0 +1,38 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "eventosapp-d7729",
+          "appId": "1:981421958272:android:e0abcc8c491741623e3265",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "eventosapp-d7729",
+          "configurations": {
+            "android": "1:981421958272:android:e0abcc8c491741623e3265",
+            "ios": "1:981421958272:ios:bd0144d31d90787c3e3265",
+            "macos": "1:981421958272:ios:bd0144d31d90787c3e3265",
+            "web": "1:981421958272:web:5a3d82fbf648507f3e3265",
+            "windows": "1:981421958272:web:bb35d634e772cca73e3265"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ]
+    }
+  ]
+}

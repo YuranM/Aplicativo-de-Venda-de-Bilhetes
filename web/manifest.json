@@ -1,11 +1,11 @@
 {
-    "name": "bilheteriapdm",
-    "short_name": "bilheteriapdm",
+    "name": "eventos_app_cliente",
+    "short_name": "eventos_app_cliente",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Projecto de flutter para a cadeira de pdm, Venda e gestao de um apk de venda de bilhetes.",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

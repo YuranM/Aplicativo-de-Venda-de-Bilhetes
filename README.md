@@ -1,6 +1,6 @@
-# bilheteriapdm
+# eventos_app_cliente
 
-Projecto de flutter para a cadeira de pdm, Venda e gestao de um apk de venda de bilhetes.
+A new Flutter project.
 
 ## Getting Started
 

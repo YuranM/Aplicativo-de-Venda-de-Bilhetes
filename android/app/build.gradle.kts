@@ -1,15 +1,19 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
     id("com.google.gms.google-services")
+}
 
+
+dependencies{
+    implementation(platform("com.google.firebase:firebase-bom:33.14.0"))
+    implementation("com.google.firebase:firebase-analytics")
 }
 
 android {
-    namespace = "com.example.bilheteriapdm"
-    compileSdk = flutter.compileSdkVersion
+    namespace = "com.example.eventos_app_cliente"
+    compileSdk = 35
     ndkVersion = "27.0.12077973"
 
     compileOptions {
@@ -23,14 +27,13 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.example.eventos_app_cliente"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        applicationId = "com.example.bilheteriapdm"
         minSdk = 23
-        targetSdk = 33 // ou outro valor suportado pelo seu projeto
-        versionCode = 1
-        versionName = "1.0"
-        multiDexEnabled = true
+        targetSdk = 35
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
     }
 
     buildTypes {
@@ -44,14 +47,4 @@ android {
 
 flutter {
     source = "../.."
-}
-dependencies {
-    // Import the Firebase BoM
-    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
-    implementation ("androidx.multidex:multidex:2.0.1")
-
-
-    // TODO: Add the dependencies for Firebase products you want to use
-    // When using the BoM, don't specify versions in Firebase dependencies
-    // https://firebase.google.com/docs/android/setup#available-libraries
 }

@@ -26,7 +26,6 @@ class _RootScreenState extends State<RootScreen> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     controller = PageController(
       initialPage: currentScreen,

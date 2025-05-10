@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
+
     return  Scaffold(
       body:Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -28,15 +28,6 @@ class _HomePageState extends State<HomePage> {
             color: Colors.blueAccent,
 
           ),
-          SwitchListTile(
-            title:  Text(themeProvider.getIsDartTheme
-                ? "Modo Escuro"
-                : "Modo Claro"),
-            value: themeProvider.getIsDartTheme,
-            onChanged: (value){
-              themeProvider.setDarkTheme(themevalue: value);
-            },
-          )
         ],
       )
     );

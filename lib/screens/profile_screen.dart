@@ -3,7 +3,9 @@ import 'package:bilheteriapdm/widgets/app_name_text.dart';
 import 'package:bilheteriapdm/widgets/subtitles_text.dart';
 import 'package:bilheteriapdm/widgets/title_text.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import '../providers/theme_provider.dart';
 import '../widgets/custom_list_tile.dart';
 
 
@@ -12,6 +14,7 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProvider>(context);
     return  Scaffold(
       appBar: AppBar(
         title: AppNameTextWidget(),
@@ -48,7 +51,8 @@ class ProfileScreen extends StatelessWidget {
                       width: 3,
                     ),
                     image: const DecorationImage(
-                        image: NetworkImage("url"),
+                        image: NetworkImage("url"), //Imagem do perfil por questao
+                      //de demostracao irei colocar uma imagem aleatoria
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -95,6 +99,50 @@ class ProfileScreen extends StatelessWidget {
                   text: "Address",
                   function: (){},
                 ),
+                Divider(
+                  thickness: 2,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                TitleText(label: "Settings"),
+                SwitchListTile(
+                  title:  Text(themeProvider.getIsDartTheme
+                      ? "Modo Escuro"
+                      : "Modo Claro"),
+                  value: themeProvider.getIsDartTheme,
+                  onChanged: (value){
+                    themeProvider.setDarkTheme(themevalue: value);
+                  },
+                ),
+                Divider(
+                  thickness: 2,
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                
+                
+                Center(
+                  child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.red,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30),
+                      )
+                    ),
+                    onPressed: (){},
+                    icon:
+                    const Icon(
+                        Icons.login
+                    ),
+                    label:
+                    const Text(
+                        "Sair"
+                    ),
+                  ),
+                ),
+
 
               ],
             ),

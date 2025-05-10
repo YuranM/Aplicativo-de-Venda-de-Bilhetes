@@ -1,5 +1,9 @@
+import 'package:bilheteriapdm/widgets/empty_widget_bag.dart';
+import 'package:bilheteriapdm/widgets/subtitles_text.dart';
 import 'package:bilheteriapdm/widgets/title_text.dart';
 import 'package:flutter/material.dart';
+
+import '../services/assets_manager.dart';
 
 
 class CartScreen extends StatelessWidget {
@@ -7,10 +11,13 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body:  Center(
-        child:  TitleText(label: "Tela de Carrinho de compras"),
-      ),
+    return Scaffold(
+        body: EmptyWidgetBag(
+            imagePath: AssetsManager.shoppingBasket,
+            title: "O seu carrinho esta vazio",
+            subtitle: "Parece me que seu carrinho esta vazio. /n Compre algo",
+            buttonText: "Compre agora",
+        ),
     );
   }
 }

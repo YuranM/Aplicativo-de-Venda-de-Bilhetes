@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bilheteriapdm/screens/cart_screen.dart';
+import 'package:bilheteriapdm/screens/cart/cart_screen.dart';
 import 'package:bilheteriapdm/screens/home_page.dart';
 import 'package:bilheteriapdm/screens/profile_screen.dart';
 import 'package:bilheteriapdm/screens/search_screen.dart';

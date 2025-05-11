@@ -13,7 +13,10 @@ class Styles{
           brightness: isDarkTheme ? Brightness.dark : Brightness.light,
       appBarTheme: AppBarTheme(
         elevation: 0,
-      )
+        iconTheme: IconThemeData(
+          color: isDarkTheme ? Colors.white : Colors.black,
+        )
+      ),
     );
   }
 

@@ -38,6 +38,7 @@ dependencies:
   shared_preferences: any
   flutter_iconly: any
   shimmer: any
+  fancy_shimmer_image: any
 
 dev_dependencies:
   flutter_test:

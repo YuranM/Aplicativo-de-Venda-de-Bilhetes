@@ -81,22 +81,22 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 CustomListTile(
                     imagePath: AssetsManager.orderSvg,
-                    text: "All orders",
+                    text: "Todos Pedidos",
                     function: (){},
                 ),
                 CustomListTile(
                   imagePath: AssetsManager.wishlistSvg,
-                  text: "WishList",
+                  text: "Guardados",
                   function: (){},
                 ),
                 CustomListTile(
                   imagePath: AssetsManager.recent,
-                  text: "Recent",
+                  text: "Recente",
                   function: (){},
                 ),
                 CustomListTile(
                   imagePath: AssetsManager.address,
-                  text: "Address",
+                  text: "Endereco",
                   function: (){},
                 ),
                 Divider(

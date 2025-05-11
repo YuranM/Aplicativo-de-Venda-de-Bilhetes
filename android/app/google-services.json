@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069748716885",
+    "project_id": "vendabilhetespdm",
+    "storage_bucket": "vendabilhetespdm.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069748716885:android:e541cc236d61d039f45bdc",
+        "android_client_info": {
+          "package_name": "com.example.bilheteriapdm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDs--xKgai1Onu0jO9AHj2k7wj3Rs6iZ-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

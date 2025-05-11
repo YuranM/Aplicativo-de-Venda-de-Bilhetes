@@ -58,11 +58,13 @@ class EmptyWidgetBag extends StatelessWidget {
                   padding: EdgeInsets.all(20),
                 ),
                 onPressed: (){},
-                child:
-                Text(buttonText),
-                style: TextStyle(
+                child: Text(
+                    buttonText,
+
+                 style: TextStyle(
                   fontSize: 20,
                 ),
+              ),
               ),
             ],
           ),

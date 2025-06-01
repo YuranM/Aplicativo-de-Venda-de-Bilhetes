@@ -41,6 +41,7 @@ dependencies:
   fancy_shimmer_image: any
   dynamic_height_grid_view: any
   image_picker: any
+  card_swiper: any
 
   #utils
   uuid: any

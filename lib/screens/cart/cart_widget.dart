@@ -5,6 +5,8 @@ import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 
+import '../../consts/app_constants.dart';
+
 class CartWidget extends StatelessWidget {
   const CartWidget({super.key});
 
@@ -20,8 +22,7 @@ class CartWidget extends StatelessWidget {
               ClipRRect(
                 borderRadius: BorderRadius.circular(12),
                 child: FancyShimmerImage(
-                  imageUrl:
-                    "https://www.nike.com/za/w/air-max-shoes-a6d8hzy7ok",
+                  imageUrl: AppConstants.productImageUrl,
                 height: size.height * 0.2,
                 width: size.width * 0.2,
                 ), //colocar link da imagem

@@ -1,3 +1,4 @@
+import 'package:bilheteriapdm/screens/cart/cart_bottom_checkout.dart';
 import 'package:bilheteriapdm/screens/cart/cart_widget.dart';
 import 'package:bilheteriapdm/widgets/empty_widget_bag.dart';
 import 'package:bilheteriapdm/widgets/subtitles_text.dart';
@@ -44,6 +45,7 @@ class CartScreen extends StatelessWidget {
         );
       },
       ),
+      bottomSheet: const CartBottomCheckout(),
     );
   }
 }

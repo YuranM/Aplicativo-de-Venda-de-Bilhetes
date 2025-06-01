@@ -25,10 +25,12 @@ android {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        applicationId = "com.example.bilheteriapdm"
+        minSdk = 23
+        targetSdk = 33 // ou outro valor suportado pelo seu projeto
+        versionCode = 1
+        versionName = "1.0"
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -46,6 +48,7 @@ flutter {
 dependencies {
     // Import the Firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    implementation ("androidx.multidex:multidex:2.0.1")
 
 
     // TODO: Add the dependencies for Firebase products you want to use

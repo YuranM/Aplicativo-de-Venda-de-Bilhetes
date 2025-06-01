@@ -39,6 +39,21 @@ dependencies:
   flutter_iconly: any
   shimmer: any
   fancy_shimmer_image: any
+  dynamic_height_grid_view: any
+  image_picker: any
+
+  #utils
+  uuid: any
+
+  #firebase
+  firebase_core: any
+  firebase_messaging: any
+  firebase_auth: any
+  cloud_firestore: any
+  firebase_storage: any
+  google_sign_in: any
+  google_maps_flutter: any
+
 
 dev_dependencies:
   flutter_test:
